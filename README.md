@@ -166,16 +166,20 @@ Traffic is forwarded through Cloudflare to the local service:
 
 Internet
     │
+    |
     ▼
 Cloudflare
     │
     │ Cloudflare Tunnel
+    |
     ▼
 cloudflared
     │
+    |
     ▼
 localhost:80
     │
+    |
     ▼
 Web Application
 
