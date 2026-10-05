@@ -164,43 +164,15 @@ https://website.example.com
 
 Traffic is forwarded through Cloudflare to the local service:
 
-Internet
-    │
-    |
-    ▼
-Cloudflare
-    │
-    │ Cloudflare Tunnel
-    |
-    ▼
-cloudflared
-    │
-    |
-    ▼
-localhost:80
-    │
-    |
-    ▼
-Web Application
+<img width="968" height="137" alt="image" src="https://github.com/user-attachments/assets/4e472daa-e4b5-4d48-afbd-57d6398d0bd3" />
+
+
 
 Summary
 
 The main workflow is:
 
-1. Verify cloudflared
-        ↓
-2. Authenticate with Cloudflare
-        ↓
-3. Create the Tunnel
-        ↓
-4. Create the DNS route
-        ↓
-5. Configure config.yaml
-        ↓
-6. Validate configuration
-        ↓
-7. Start the Tunnel
-        ↓
-8. Test the application
+<img width="402" height="667" alt="image" src="https://github.com/user-attachments/assets/85cc1fa7-f10a-4998-b494-bf98678db9de" />
+
 
 This configuration allows the origin server to publish an internal web service through Cloudflare without requiring direct inbound exposure of the origin server.
